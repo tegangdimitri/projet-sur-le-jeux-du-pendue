@@ -74,3 +74,58 @@ int verification( char entre, char *tab ,const char *ver){
     }
     return i ;
 }
+void afficherPendu(int mauvaisesReponses) {
+    cout << endl;
+    switch(mauvaisesReponses) {
+    case 4:
+        cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   /|\
+                                                    |   / \
+                                                    |
+                                                  __|__
+                )" << endl;
+        break;
+
+    case 3:
+        cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   
+                                                    |   
+                                                    |
+                                                  __|__
+                )" << endl;
+        break;
+        
+     case 2:
+        cout << R"(
+                                                    ______
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+                )" << endl;
+        break;
+    case 1:
+        cout << R"(
+
+
+
+
+
+
+                                                  _____
+                )" << endl;
+        break;
+    default:
+        cout << endl;
+        break;
+    }
+    cout << endl;
+}
